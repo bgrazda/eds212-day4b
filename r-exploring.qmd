@@ -34,4 +34,7 @@ tail(penguins)
 
 #pairsplot ----
 GGally::ggpairs(penguins, columns = 3:6, ggplot2::aes(color = species))
+
+# Create histogram of penguin flipper lengths ----
+ggplot(data = penguins, aes(x = flipper_length_mm)) + geom_histogram()
 ```
